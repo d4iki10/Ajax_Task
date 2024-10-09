@@ -69,3 +69,14 @@ div.actions {
 
 label {
   display: block; }
+
+.favorite-container {
+  display: flex;
+  align-items: center;
+}
+
+.favorite-count {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #555;
+}

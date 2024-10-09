@@ -15,5 +15,10 @@
   <%= @blog.user.name %>
 </p>
 
+<!-- お気に入りボタンの部分テンプレートを組み込み -->
+<div id="favorite-button-<%= @blog.id %>">
+  <%= render 'favorite', blog: @blog %>
+</div>
+
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
